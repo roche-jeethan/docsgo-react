@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import LanguageList from './components/LanguageList';
+import SearchBar from './components/SearchBar';
+import languages from './languages';
 
 function App() {
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const filteredLanguages = languages.filter((language) =>
+    language.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Programming Languages Documentation</h1>
+        <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       </header>
+      <main>
+        <LanguageList languages={filteredLanguages} />
+      </main>
     </div>
   );
 }

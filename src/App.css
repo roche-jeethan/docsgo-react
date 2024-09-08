@@ -1,38 +1,74 @@
+/* src/App.css */
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: Arial, sans-serif;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search-bar {
+  padding: 10px;
+  margin: 20px 0;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.language-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.language-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px;
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.language-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.language-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.language-card h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.language-card p {
+  margin: 0.5em 0 0;
+  color: #666;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .language-card {
+    width: 100%;
+    margin: 8px 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .search-bar {
+    width: 90%;
   }
 }
