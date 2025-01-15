@@ -1,5 +1,5 @@
 // src/languages.js
-import { FaJs, FaPython, FaJava, FaPhp, FaRuby, FaRust, FaSwift, FaHtml5, FaCss3Alt } from 'react-icons/fa';
+import { FaJs, FaPython, FaJava, FaPhp, FaRust, FaSwift, FaHtml5, FaCss3Alt } from 'react-icons/fa';
 
 const languages = [
   { name: 'JavaScript', description: 'A versatile scripting language.', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', icon: <FaJs /> },
