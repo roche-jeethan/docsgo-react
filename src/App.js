@@ -2,16 +2,28 @@ import React, { useState } from 'react';
 import './App.css';
 import LanguageList from './components/LanguageList';
 import SearchBar from './components/SearchBar';
-import languages from './languages';
+import {general, web, mobile, mlds}  from './languages';
 import { FaTwitter, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 
 function App() {
   const [searchQuery, setSearchQuery] = useState('');
 
-  const filteredLanguages = languages.filter((language) =>
+  const generalFilteredLanguages = general.filter((language) =>
     language.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
+  const webFilteredLanguages = web.filter((language) =>
+    language.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+  const mobileFilteredLanguages = mobile.filter((language) =>
+    language.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+  const mldsFilteredLanguages = mlds.filter((language) =>
+    language.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+  // const filteredLanguages = languages.filter((language) =>
+  //   language.name.toLowerCase().includes(searchQuery.toLowerCase())
+  // );
 
   return (
     <div className="App">
@@ -20,8 +32,14 @@ function App() {
         <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       </header>
       <main>
-        <h2 className="headings-left">General Purpose languages</h2>
-        <LanguageList languages={filteredLanguages} />
+        <h2 className="headings">General Purpose languages</h2>
+        <LanguageList languages={generalFilteredLanguages} />
+        <h2 className="headings">Web Development languages</h2>
+        <LanguageList languages={webFilteredLanguages} />
+        <h2 className="headings">Mobile Development languages</h2>
+        <LanguageList languages={mobileFilteredLanguages} />
+        <h2 className="headings">Machine Learning and Data Science languages</h2>
+        <LanguageList languages={mldsFilteredLanguages} />
       </main>
       <footer className="footer">
         <div className="footer-content">
