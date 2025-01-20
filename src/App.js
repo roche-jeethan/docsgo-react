@@ -14,10 +14,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Programming Languages Documentation</h1>
+        <h1 className="header-title">DocsGo</h1>
         <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       </header>
       <main>
+        <h2 className="headings-left">General Purpose languages</h2>
         <LanguageList languages={filteredLanguages} />
       </main>
     </div>
