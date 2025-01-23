@@ -28,23 +28,35 @@ function App() {
     language.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+
   return (
     <div className={darkMode ? 'dark' : ''}>
-      <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
-        <header className="p-4 flex flex-col items-center">
-          <h1 className="text-4xl font-bold">DocsGo</h1>
-          <div className="w-full max-w-md flex items-center justify-center mt-4">
-            <div className="flex-grow">
-              <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+      <div className={`min-h-screen bg-cover ${darkMode ? 'bg-dark-theme' : 'bg-light-theme'} text-black dark:text-white`}>
+        <nav className="w-1/2 mx-auto flex justify-between items-center py-4">
+          <nav className="sticky top-0 z-10 mx-auto max-w-5xl rounded-xl border border-gray-100 bg-white p-4 shadow-sm dark:bg-gray-900"></nav>
+          <div className="flex items-center space-x-4">
+            <SearchBar title="Search Bar" searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+          </div>
+          <div className="flex items-center space-x-4">
+            <div className="relative">
+              <select className="p-2 bg-gray-200 dark:bg-gray-800 rounded">
+                <option className="text-gray-800 dark:text-gray-200">Categories</option>
+                <option className="text-gray-800 dark:text-gray-200">General</option>
+                <option className="text-gray-800 dark:text-gray-200">Web</option>
+                <option className="text-gray-800 dark:text-gray-200">Mobile</option>
+                <option className="text-gray-800 dark:text-gray-200">ML & DS</option>
+              </select>
             </div>
+            <button className="p-2 bg-gray-200 dark:bg-gray-800 rounded">About</button>
+            <button className="p-2 bg-gray-200 dark:bg-gray-800 rounded">Who Made This</button>
             <button
               onClick={toggleDarkMode}
               className="p-2 bg-gray-200 dark:bg-gray-800 rounded ml-4"
             >
-              {darkMode ? <FaSun /> : <FaMoon />}
+              {darkMode ? <FaSun title="Switch to Light Mode" /> : <FaMoon title="Switch to Dark Mode" />}
             </button>
           </div>
-        </header>
+        </nav>
         <main className="p-4">
           <h2 className="text-2xl font-semibold">General Purpose languages</h2>
           <LanguageList languages={generalFilteredLanguages} />

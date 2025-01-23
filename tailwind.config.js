@@ -5,9 +5,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        dark: '#1a202c',
-        light: '#f7fafc',
+        dark: '#000',
+        light: '#fff',
       },
+      backgroundImage: theme => ({
+        'light-theme': "url('/public/light-theme.svg')",
+        'dark-theme': "url('/public/dark-theme.svg')",
+      }),
     },
   },
   variants: {
