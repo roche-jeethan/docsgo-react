@@ -4,7 +4,8 @@ import './index.css';
 import LanguageList from './components/LanguageList';
 import SearchBar from './components/SearchBar';
 import { general, web, mobile, mlds } from './languages';
-import { FaTwitter, FaGithub, FaLinkedin, FaInstagram, FaSun, FaMoon } from 'react-icons/fa';
+import { FaSun, FaMoon } from 'react-icons/fa';
+import { FaXTwitter, FaLinkedinIn, FaGithub, FaInstagram} from 'react-icons/fa6';
 
 
 function App() {
@@ -78,13 +79,13 @@ function App() {
             <p>Creator Profile</p>
             <div className="flex space-x-4">
               <a href="https://x.com/RocheJeethan" target="_blank" rel="noopener noreferrer">
-                <FaTwitter />
+                <FaXTwitter />
               </a>
               <a href="https://github.com/roche-jeethan" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
               </a>
               <a href="https://www.linkedin.com/in/roche-jeethan/" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin />
+                <FaLinkedinIn />
               </a>
               <a href="https://www.instagram.com/roche_jeethan/" target="_blank" rel="noopener noreferrer">
                 <FaInstagram />
