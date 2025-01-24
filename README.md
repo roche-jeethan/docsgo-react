@@ -18,9 +18,6 @@ In a world where developers constantly juggle between tabs and searches to find 
 ### Search Interface  
 ![Search Interface](#)  
 
-### Documentation Links  
-![Documentation Links](#)  
-
 ---
 
 ## ✨ Features
