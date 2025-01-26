@@ -1,6 +1,7 @@
 import { FaJs, FaPython, FaJava, FaPhp, FaRust, FaSwift, FaHtml5, FaCss3Alt } from 'react-icons/fa';
 import { DiRuby } from 'react-icons/di';
-import { TbBrandCpp, TbBrandCSharp, TbBrandTypescript } from 'react-icons/tb';
+import { TbBrandCpp, TbBrandCSharp, TbBrandTypescript, TbBrandKotlin } from 'react-icons/tb';
+import { SiDart } from 'react-icons/si';
 
 
 
@@ -20,8 +21,8 @@ const generalPurposeLanguages = [
   { name: 'Ruby', description: 'A dynamic, open source programming language with a focus on simplicity and productivity.', url: 'https://www.ruby-lang.org/en/documentation/', icon: <DiRuby /> },
   { name: 'Go', description: 'An open source programming language that makes it easy to build simple, reliable, and efficient software.', url: 'https://golang.org/doc/' },
   { name: 'Rust', description: 'A language empowering everyone to build reliable and efficient software.', url: 'https://www.rust-lang.org/learn', icon: <FaRust /> },
-  { name: 'Kotlin', description: 'A modern programming language that makes developers happier.', url: 'https://kotlinlang.org/docs/home.html' },
-  { name: 'Dart', description: 'A client optimized programming language for apps on multiple platforms.', url: 'https://dart.dev/guides' },
+  { name: 'Kotlin', description: 'A modern programming language that makes developers happier.', url: 'https://kotlinlang.org/docs/home.html', icon: <TbBrandKotlin /> },
+  { name: 'Dart', description: 'A client optimized programming language for apps on multiple platforms.', url: 'https://dart.dev/guides', icon: <SiDart/> },
   { name: 'Scala', description: 'A modern multi-paradigm programming language designed to express common programming patterns in a concise, elegant, and type-safe way.', url: 'https://docs.scala-lang.org/' },
   { name: 'Perl', description: 'A highly capable, feature-rich programming language with over 30 years of development.', url: 'https://perldoc.perl.org/' },
   { name: 'R', description: 'A language and environment for statistical computing and graphics.', url: 'https://cran.r-project.org/doc/manuals/r-release/R-intro.html' },
@@ -39,8 +40,8 @@ const generalPurposeLanguages = [
 
 const mobileLanguages = [
   { name: 'Swift', description: 'A powerful and intuitive programming language for macOS, iOS, watchOS, and tvOS.', url: 'https://swift.org/documentation/', icon: <FaSwift /> },
-  { name: 'Kotlin', description: 'A modern programming language that makes developers happier.', url: 'https://kotlinlang.org/docs/home.html' },
-  { name: 'Dart', description: 'A client optimized programming language for apps on multiple platforms.', url: 'https://dart.dev/guides' },
+  { name: 'Kotlin', description: 'A modern programming language that makes developers happier.', url: 'https://kotlinlang.org/docs/home.html', icon: <TbBrandKotlin /> },
+  { name: 'Dart', description: 'A client optimized programming language for apps on multiple platforms.', url: 'https://dart.dev/guides', icon: <SiDart/> },
 ];
 
 const mlAndDsLanguages = [
