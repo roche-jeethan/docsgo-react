@@ -1,13 +1,15 @@
 import { FaJs, FaPython, FaJava, FaPhp, FaRust, FaSwift, FaHtml5, FaCss3Alt } from 'react-icons/fa';
 import { DiRuby } from 'react-icons/di';
-import { TbBrandCpp, TbBrandCSharp } from 'react-icons/tb';
+import { TbBrandCpp, TbBrandCSharp, TbBrandTypescript } from 'react-icons/tb';
+
+
 
 const webLanguages = [
   { name: 'JavaScript', description: 'A versatile scripting language.', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', icon: <FaJs /> },
   { name: 'PHP', description: 'A popular general-purpose scripting language.', url: 'https://www.php.net/docs.php', icon: <FaPhp /> },
   { name: 'HTML5', description: 'The standard markup language for creating web pages.', url: 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5', icon: <FaHtml5 /> },
   { name: 'CSS3', description: 'A style sheet language used for describing the presentation of a document written in a markup language.', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS', icon: <FaCss3Alt /> },
-  { name: 'TypeScript', description: 'A typed superset of JavaScript that compiles to plain JavaScript.', url: 'https://www.typescriptlang.org/docs/' },
+  { name: 'TypeScript', description: 'A typed superset of JavaScript that compiles to plain JavaScript.', url: 'https://www.typescriptlang.org/docs/', icon: <TbBrandTypescript /> },
 ];
 
 const generalPurposeLanguages = [
