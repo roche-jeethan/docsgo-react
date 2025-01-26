@@ -1,7 +1,7 @@
-import { FaJs, FaPython, FaJava, FaPhp, FaRust, FaSwift, FaHtml5, FaCss3Alt } from 'react-icons/fa';
+import { FaJs, FaPython, FaJava, FaPhp, FaRust, FaSwift, FaHtml5, FaCss3Alt , FaRProject } from 'react-icons/fa';
 import { DiRuby } from 'react-icons/di';
 import { TbBrandCpp, TbBrandCSharp, TbBrandTypescript, TbBrandKotlin } from 'react-icons/tb';
-import { SiDart } from 'react-icons/si';
+import { SiDart, SiJulia } from 'react-icons/si';
 
 
 
@@ -25,7 +25,7 @@ const generalPurposeLanguages = [
   { name: 'Dart', description: 'A client optimized programming language for apps on multiple platforms.', url: 'https://dart.dev/guides', icon: <SiDart/> },
   { name: 'Scala', description: 'A modern multi-paradigm programming language designed to express common programming patterns in a concise, elegant, and type-safe way.', url: 'https://docs.scala-lang.org/' },
   { name: 'Perl', description: 'A highly capable, feature-rich programming language with over 30 years of development.', url: 'https://perldoc.perl.org/' },
-  { name: 'R', description: 'A language and environment for statistical computing and graphics.', url: 'https://cran.r-project.org/doc/manuals/r-release/R-intro.html' },
+  { name: 'R', description: 'A language and environment for statistical computing and graphics.', url: 'https://cran.r-project.org/doc/manuals/r-release/R-intro.html', icon: <FaRProject /> },
   { name: 'Lua', description: 'A powerful, efficient, lightweight, embeddable scripting language.', url: 'https://www.lua.org/docs.html' },
   { name: 'Haskell', description: 'An advanced, purely functional programming language.', url: 'https://www.haskell.org/documentation/' },
   { name: 'Shell', description: 'A command language interpreter that executes commands read from a command line string, the standard input, or a file.', url: 'https://www.gnu.org/software/bash/manual/bash.html' },
@@ -34,7 +34,7 @@ const generalPurposeLanguages = [
   { name: 'Clojure', description: 'A dynamic, general-purpose programming language, combining the approachability and interactive development of a scripting language with an efficient and robust infrastructure for multithreaded programming.', url: 'https://clojure.org/guides/getting_started' },
   { name: 'Groovy', description: 'A powerful, optionally typed and dynamic language, with static-typing and static compilation capabilities, for the Java platform aimed at improving developer productivity.', url: 'https://groovy-lang.org/documentation.html' },
   { name: 'Erlang', description: 'A general-purpose, concurrent, functional programming language, as well as a garbage-collected runtime system.', url: 'https://erlang.org/documentation.html' },
-  { name: 'Julia', description: 'A high-level, high-performance dynamic programming language for technical computing.', url: 'https://docs.julialang.org/en/v1/' },
+  { name: 'Julia', description: 'A high-level, high-performance dynamic programming language for technical computing.', url: 'https://docs.julialang.org/en/v1/', icon: <SiJulia /> },
   { name: 'Scheme', description: 'A general-purpose programming language, descended from Lisp and Algol.', url: 'https://schemers.org/' },
 ];
 
@@ -46,8 +46,8 @@ const mobileLanguages = [
 
 const mlAndDsLanguages = [
   { name: 'Python', description: 'A powerful high-level programming language.', url: 'https://docs.python.org/3/', icon: <FaPython /> },
-  { name: 'R', description: 'A language and environment for statistical computing and graphics.', url: 'https://cran.r-project.org/doc/manuals/r-release/R-intro.html' },
-  { name: 'Julia', description: 'A high-level, high-performance dynamic programming language for technical computing.', url: 'https://docs.julialang.org/en/v1/' },
+  { name: 'R', description: 'A language and environment for statistical computing and graphics.', url: 'https://cran.r-project.org/doc/manuals/r-release/R-intro.html', icon: <FaRProject /> },
+  { name: 'Julia', description: 'A high-level, high-performance dynamic programming language for technical computing.', url: 'https://docs.julialang.org/en/v1/', icon: <SiJulia /> },
 ];
 
 export { generalPurposeLanguages as general, webLanguages as web, mobileLanguages as mobile, mlAndDsLanguages as mlds };
