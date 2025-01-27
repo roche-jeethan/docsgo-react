@@ -9,8 +9,8 @@ module.exports = {
         light: '#fff',
       },
       backgroundImage: theme => ({
-        'light-theme': "url('/public/light-theme.svg')",
-        'dark-theme': "url('/public/dark-theme.svg')",
+        'light-theme': "url('/src/assets/light-theme.svg')",
+        'dark-theme': "url('/src/assets/dark-theme.svg')",
       }),
     },
   },
