@@ -6,6 +6,7 @@ import SearchBar from './components/SearchBar';
 import { general, web, mobile, mlds } from './languages';
 import { FaSun, FaMoon } from 'react-icons/fa';
 import { FaXTwitter, FaLinkedinIn, FaGithub, FaInstagram} from 'react-icons/fa6';
+import { GrInfo } from 'react-icons/gr';
 import iconLight from './assets/logo-light.png';
 import iconDark from './assets/logo-dark.png';
 
@@ -42,8 +43,9 @@ function App() {
             </div>
           </div>
           <div className="flex items-center space-x-4 ml-auto">
-            <button className="p-2 bg-gray-200 dark:bg-gray-800 rounded">About</button>
-            <button className="p-2 bg-gray-200 dark:bg-gray-800 rounded">Who Made This</button>
+            <button className="p-2 bg-gray-200 dark:bg-gray-800 rounded">
+              <GrInfo title="About DocsGo" />
+            </button>
             <button
               onClick={toggleDarkMode}
               className="p-2 bg-gray-200 dark:bg-gray-800 rounded ml-4">
