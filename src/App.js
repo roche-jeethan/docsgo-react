@@ -6,7 +6,7 @@ import SearchBar from './components/SearchBar';
 import { general, web, mobile, mlds } from './languages';
 import { FaSun, FaMoon } from 'react-icons/fa';
 import { FaXTwitter, FaLinkedinIn, FaGithub, FaInstagram} from 'react-icons/fa6';
-
+//import icon from '../public/logo192.png';
 
 function App() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -33,32 +33,31 @@ function App() {
   return (
     <div className={darkMode ? 'dark' : ''}>
       <div className={`min-h-screen bg-cover ${darkMode ? 'bg-dark-theme' : 'bg-light-theme'} text-black dark:text-white`}>
-        <nav className="w-1/2 mx-auto flex justify-between items-center py-4">
-          <nav className="sticky top-0 z-10 mx-auto max-w-5xl rounded-xl border border-gray-100 bg-white p-4 shadow-sm dark:bg-gray-900"></nav>
+        <nav className="w-full px-4 sm:px-8 flex justify-between items-center py-4">
           <div className="flex items-center space-x-4">
-            <SearchBar title="Search Bar" searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-          </div>
-          <div className="flex items-center space-x-4">
-            <div className="relative">
-              <select className="p-2 bg-gray-200 dark:bg-gray-800 rounded">
-                <option className="text-gray-800 dark:text-gray-200">Categories</option>
-                <option className="text-gray-800 dark:text-gray-200">General</option>
-                <option className="text-gray-800 dark:text-gray-200">Web</option>
-                <option className="text-gray-800 dark:text-gray-200">Mobile</option>
-                <option className="text-gray-800 dark:text-gray-200">ML & DS</option>
-              </select>
+            <div className="flex items-center space-x-2">
+              {/* <img src={ icon } alt="DocsGo Logo" className="w-10 h-10" /> */}
+              <h1 className="text-2xl font-semibold">DocsGo</h1>
             </div>
+          </div>
+          <div className="flex items-center space-x-4 ml-auto">
             <button className="p-2 bg-gray-200 dark:bg-gray-800 rounded">About</button>
             <button className="p-2 bg-gray-200 dark:bg-gray-800 rounded">Who Made This</button>
             <button
               onClick={toggleDarkMode}
-              className="p-2 bg-gray-200 dark:bg-gray-800 rounded ml-4"
-            >
+              className="p-2 bg-gray-200 dark:bg-gray-800 rounded ml-4">
               {darkMode ? <FaSun title="Switch to Light Mode" /> : <FaMoon title="Switch to Dark Mode" />}
             </button>
           </div>
         </nav>
-        <main className="p-4">
+        <div>
+          <h1 className="text-6xl font-bold text-center mt-10">Welcome to DocsGo</h1>
+          <p className="text-xl font-italic text-center m-10">All documentations at one place, with one click!</p>
+        </div>
+        <div className="flex justify-center mb-10">
+            <SearchBar title="Search Bar" searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+        </div>
+        <main className="p-4 sm:px-8">
           <h2 className="text-2xl font-semibold">General Purpose languages</h2>
           <LanguageList languages={generalFilteredLanguages} />
           <h2 className="text-2xl font-semibold">Web Development languages</h2>
@@ -68,7 +67,7 @@ function App() {
           <h2 className="text-2xl font-semibold">Machine Learning and Data Science languages</h2>
           <LanguageList languages={mldsFilteredLanguages} />
         </main>
-        <footer className="p-4">
+        <footer className="p-4 sm:px-8">
           <div className="flex flex-col items-center">
             <p>© 2025 DocsGo. All rights reserved.</p>
             <div className="flex space-x-4">
@@ -77,6 +76,7 @@ function App() {
               <a href="/contact_us" className="hover:underline">Contact Us</a>
             </div>
             <p>Creator Profile</p>
+            {/* eslint-disable-next-line */}
             <div className="flex space-x-4">
               <a href="https://x.com/RocheJeethan" target="_blank" rel="noopener noreferrer">
                 <FaXTwitter />
