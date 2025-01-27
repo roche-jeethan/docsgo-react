@@ -6,7 +6,8 @@ import SearchBar from './components/SearchBar';
 import { general, web, mobile, mlds } from './languages';
 import { FaSun, FaMoon } from 'react-icons/fa';
 import { FaXTwitter, FaLinkedinIn, FaGithub, FaInstagram} from 'react-icons/fa6';
-//import icon from '../public/logo192.png';
+import iconLight from './assets/logo-light.png';
+import iconDark from './assets/logo-dark.png';
 
 function App() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -35,8 +36,8 @@ function App() {
       <div className={`min-h-screen bg-cover ${darkMode ? 'bg-dark-theme' : 'bg-light-theme'} text-black dark:text-white`}>
         <nav className="w-full px-4 sm:px-8 flex justify-between items-center py-4">
           <div className="flex items-center space-x-4">
-            <div className="flex items-center space-x-2">
-              {/* <img src={ icon } alt="DocsGo Logo" className="w-10 h-10" /> */}
+            <div className="flex items-center space-x-3">
+              <img src={ darkMode ? iconLight : iconDark } alt="DocsGo Logo" className="w-12 h-12" />
               <h1 className="text-2xl font-semibold">DocsGo</h1>
             </div>
           </div>
