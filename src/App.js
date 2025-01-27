@@ -6,6 +6,7 @@ import SearchBar from './components/SearchBar';
 import { general, web, mobile, mlds } from './languages';
 import { FaSun, FaMoon } from 'react-icons/fa';
 import { FaXTwitter, FaLinkedinIn, FaGithub, FaInstagram, FaDiscord } from 'react-icons/fa6';
+import { MdEmail } from 'react-icons/md';
 import { GrInfo } from 'react-icons/gr';
 import iconLight from './assets/logo-light.png';
 import iconDark from './assets/logo-dark.png';
@@ -73,10 +74,9 @@ function App() {
         <footer className="p-4 sm:px-8">
           <div className="flex flex-col items-center justify-center">
             <p>© 2025 DocsGo. All rights reserved.</p>
-            <div className="flex space-x-auto m-4">
-              <a href="/privacy_policy" className="text-center hover:underline">Privacy Policy</a>
-              <a href="/terms_of_service" className="text-center hover:underline">Terms of Service</a>
-              <a href="/contact_us" className="text-center hover:underline">Contact Us</a>
+            <div className="flex items-center space-x-4 m-4">
+              <p className="mr-4">Contact for improvements!</p>
+              <address><a href="mailto:jeethanroche@gmail.com"> <MdEmail/> </a></address>
             </div>
             <p className="mb-4">Creator's Profile</p>
             {/* eslint-disable-next-line */}
