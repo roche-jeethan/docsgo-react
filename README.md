@@ -11,12 +11,12 @@ In a world where developers constantly juggle between tabs and searches to find 
 ---
 
 ## 📸 Screenshots
-  
-### Home Page  
-![Home Page](#)  
 
-### Search Interface  
-![Search Interface](#)  
+### Mobile  
+![Mobile View (Light Mode on left, Dark Mode on right](https://github.com/user-attachments/assets/96bc34ae-9b74-4a2f-b65c-fc11a4adabbc)  
+
+### Monitor
+![Montitor View (Light Mode at top, Dark Mode at bottom](https://github.com/user-attachments/assets/8fcacfff-4b4c-49b1-baee-b326e1a793bf)  
 
 ---
 
@@ -43,7 +43,6 @@ This project is built with cutting-edge web technologies:
 
 Link: [HERE](https://docsgo.vercel.app/)
 
----
 
 ## 📖 Conclusion
 
