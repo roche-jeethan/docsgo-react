@@ -12,6 +12,30 @@
   <lastmod>2025-01-24T07:31:08+00:00</lastmod>
   <priority>1.00</priority>
 </url>
-
+  <url>
+    <loc>https://docsgo.vercel.app/about</loc>
+    <lastmod>2025-01-31T07:31:08+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://docsgo.vercel.app/general</loc>
+    <lastmod>2025-01-31T07:31:08+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://docsgo.vercel.app/web</loc>
+    <lastmod>2025-01-31T07:31:08+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://docsgo.vercel.app/mobile</loc>
+    <lastmod>2025-01-31T07:31:08+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://docsgo.vercel.app/mlds</loc>
+    <lastmod>2025-01-31T07:31:08+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 
 </urlset>
