@@ -1,7 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "DocsGo",
-  "description": "DocsGo - Your documentation on the go",
+  "short_name": "DocsGo",
+  "name": "DocsGo - Your Documentation Hub",
+  "description": "DocsGo helps developers find programming documentation in one place with ease.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -19,10 +19,12 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "scope": "/",
   "orientation": "portrait",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "categories": ["education", "productivity", "utilities"],
+  "related_applications": []
 }
