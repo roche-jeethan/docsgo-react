@@ -1,6 +1,7 @@
 {
   "short_name": "React App",
-  "name": "Create React App Sample",
+  "name": "DocsGo",
+  "description": "DocsGo - Your documentation on the go",
   "icons": [
     {
       "src": "favicon.ico",
@@ -19,6 +20,8 @@
     }
   ],
   "start_url": ".",
+  "scope": "/",
+  "orientation": "portrait",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
