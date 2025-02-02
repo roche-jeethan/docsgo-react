@@ -3,13 +3,10 @@ import './index.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';  
 import LanguageList from './components/LanguageList';
 import SearchBar from './components/SearchBar';
+import NavBar from './components/NavBar';
 import { general, web, mobile, mlds } from './languages';
-import { FaSun, FaMoon } from 'react-icons/fa';
 import { FaXTwitter, FaLinkedinIn, FaGithub, FaInstagram, FaDiscord } from 'react-icons/fa6';
 import { MdEmail } from 'react-icons/md';
-import { GrInfo } from 'react-icons/gr';
-import iconLight from './assets/logo-light.png';
-import iconDark from './assets/logo-dark.png';
 import About from './pages/About'; 
 
 function App() {
@@ -37,25 +34,7 @@ function App() {
     <Router>
       <div className={darkMode ? 'dark' : ''}>
         <div className={`min-h-screen bg-cover ${darkMode ? 'bg-dark-theme' : 'bg-light-theme'} text-black dark:text-white`}>
-          <nav className="w-full px-4 sm:px-8 flex justify-between items-center py-4">
-            <div className="flex items-center space-x-4">
-              <div className="flex items-center space-x-3">
-                <img src={ darkMode ? iconLight : iconDark } alt="DocsGo Logo" className="w-12 h-12" />
-                <h1 className="text-2xl font-semibold">DocsGo</h1>
-              </div>
-            </div>
-            <div className="flex items-center space-x-4 ml-auto">
-              <button className="p-2 bg-gray-200 dark:bg-gray-800 rounded">
-                <GrInfo title="About DocsGo" onClick={() => window.location.href = '/about'} /> {/* Button for About page */}
-              </button>
-              <button
-                onClick={toggleDarkMode}
-                className="p-2 bg-gray-200 dark:bg-gray-800 rounded ml-4">
-                {darkMode ? <FaSun title="Switch to Light Mode" /> : <FaMoon title="Switch to Dark Mode" />}
-              </button>
-            </div>
-          </nav>
-
+          <NavBar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
           <div>
             <h1 className="text-6xl font-bold text-center mt-10">Welcome to DocsGo</h1>
             <p className="text-xl font-italic text-center m-10">All documentations at one place, with one click!</p>
@@ -102,7 +81,6 @@ function App() {
           </footer>
         </div>
       </div>
-
       <Routes>
         <Route path="/about" element={<About />} /> 
       </Routes>
