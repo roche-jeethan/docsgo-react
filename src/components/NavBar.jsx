@@ -16,7 +16,7 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
             </div>
             <div className="flex items-center space-x-4 ml-auto">
               <Link to="/about" className="p-2 bg-gray-200 dark:bg-gray-800 rounded">
-                <GrInfo title="About DocsGo" />
+                <button><GrInfo title="About DocsGo" /></button>
               </Link>
               <button
                 onClick={toggleDarkMode}
