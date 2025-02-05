@@ -11,7 +11,9 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-3">
                 <img src={ darkMode ? iconLight : iconDark } alt="DocsGo Logo" className="w-12 h-12" />
-                <h1 className="text-2xl font-semibold">DocsGo</h1>
+                <h1 className="text-2xl font-semibold" title="Home">
+                  <Link to="/"><button>DocsGo</button></Link>
+                </h1>
               </div>
             </div>
             <div className="flex items-center space-x-4 ml-auto">
