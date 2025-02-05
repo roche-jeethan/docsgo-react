@@ -1,7 +1,7 @@
 import { FaJs, FaPython, FaJava, FaPhp, FaRust, FaSwift, FaHtml5, FaCss3Alt , FaRProject } from 'react-icons/fa';
-import { DiRuby } from 'react-icons/di';
-import { TbBrandCpp, TbBrandCSharp, TbBrandTypescript, TbBrandKotlin } from 'react-icons/tb';
-import { SiDart, SiJulia } from 'react-icons/si';
+import { DiRuby, DiScala, DiPerl } from 'react-icons/di';
+import { TbBrandCpp, TbBrandCSharp, TbBrandTypescript, TbBrandKotlin, TbBrandGolang } from 'react-icons/tb';
+import { SiDart, SiJulia, SiLua, SiHaskell } from 'react-icons/si';
 
 
 
@@ -19,15 +19,15 @@ const generalPurposeLanguages = [
   { name: 'C++', description: 'A powerful general-purpose programming language.', url: 'https://en.cppreference.com/w/', icon: <TbBrandCpp /> },
   { name: 'C#', description: 'A simple, modern, object-oriented, and type-safe programming language.', url: 'https://docs.microsoft.com/en-us/dotnet/csharp', icon: <TbBrandCSharp /> },
   { name: 'Ruby', description: 'A dynamic, open source programming language with a focus on simplicity and productivity.', url: 'https://www.ruby-lang.org/en/documentation/', icon: <DiRuby /> },
-  { name: 'Go', description: 'An open source programming language that makes it easy to build simple, reliable, and efficient software.', url: 'https://golang.org/doc/' },
+  { name: 'Go', description: 'An open source programming language that makes it easy to build simple, reliable, and efficient software.', url: 'https://golang.org/doc/', icon: <TbBrandGolang/>},
   { name: 'Rust', description: 'A language empowering everyone to build reliable and efficient software.', url: 'https://www.rust-lang.org/learn', icon: <FaRust /> },
   { name: 'Kotlin', description: 'A modern programming language that makes developers happier.', url: 'https://kotlinlang.org/docs/home.html', icon: <TbBrandKotlin /> },
   { name: 'Dart', description: 'A client optimized programming language for apps on multiple platforms.', url: 'https://dart.dev/guides', icon: <SiDart/> },
-  { name: 'Scala', description: 'A modern multi-paradigm programming language designed to express common programming patterns in a concise, elegant, and type-safe way.', url: 'https://docs.scala-lang.org/' },
-  { name: 'Perl', description: 'A highly capable, feature-rich programming language with over 30 years of development.', url: 'https://perldoc.perl.org/' },
+  { name: 'Scala', description: 'A modern multi-paradigm programming language designed to express common programming patterns in a concise, elegant, and type-safe way.', url: 'https://docs.scala-lang.org/', icon: <DiScala/>},
+  { name: 'Perl', description: 'A highly capable, feature-rich programming language with over 30 years of development.', url: 'https://perldoc.perl.org/', icon: <DiPerl/>},
   { name: 'R', description: 'A language and environment for statistical computing and graphics.', url: 'https://cran.r-project.org/doc/manuals/r-release/R-intro.html', icon: <FaRProject /> },
-  { name: 'Lua', description: 'A powerful, efficient, lightweight, embeddable scripting language.', url: 'https://www.lua.org/docs.html' },
-  { name: 'Haskell', description: 'An advanced, purely functional programming language.', url: 'https://www.haskell.org/documentation/' },
+  { name: 'Lua', description: 'A powerful, efficient, lightweight, embeddable scripting language.', url: 'https://www.lua.org/docs.html', icon: <SiLua/>},
+  { name: 'Haskell', description: 'An advanced, purely functional programming language.', url: 'https://www.haskell.org/documentation/', icon: <SiHaskell/>},
   { name: 'Shell', description: 'A command language interpreter that executes commands read from a command line string, the standard input, or a file.', url: 'https://www.gnu.org/software/bash/manual/bash.html' },
   { name: 'Objective-C', description: 'An object-oriented programming language that adds Smalltalk-style messaging to the C programming language.', url: 'https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html' },
   { name: 'Elixir', description: 'A dynamic, functional language designed for building scalable and maintainable applications.', url: 'https://hexdocs.pm/elixir/Kernel.html' },
