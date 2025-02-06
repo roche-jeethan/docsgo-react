@@ -9,13 +9,12 @@ import { FaFilter } from "react-icons/fa";
 function Home() {
   const [searchQuery, setSearchQuery] = useState("");
   const [darkMode, setDarkMode] = useState(false);
-  const [activeFilter, setActiveFilter] = useState("all"); // default filter is "all"
+  const [activeFilter, setActiveFilter] = useState("all");
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
 
-  // Filter languages based on search query
   const filterLanguages = (languages) =>
     languages.filter((language) =>
       language.name.toLowerCase().includes(searchQuery.toLowerCase())
@@ -26,7 +25,6 @@ function Home() {
   const filteredMobile = filterLanguages(mobile);
   const filteredMLDS = filterLanguages(mlds);
 
-  // Render the language sections based on active filter
   const renderLanguageSection = () => {
     if (activeFilter === "all") {
       return (
@@ -85,7 +83,6 @@ function Home() {
     }
   };
 
-  // Updated Filter Button component styled like HuggingFace buttons
   const FilterButton = ({ label, filterKey, icon }) => {
     const isActive = activeFilter === filterKey;
     return (
@@ -114,7 +111,6 @@ function Home() {
           </p>
         </div>
         <div className="flex justify-center mb-10">
-          {/* Passing onFocus so that clicking the searchbar resets filter to "all" */}
           <SearchBar
             title="Search Bar"
             searchQuery={searchQuery}
@@ -122,7 +118,6 @@ function Home() {
             onFocus={() => setActiveFilter("all")}
           />
         </div>
-        {/* Filter Section */}
         <div className="mb-3 flex flex-wrap justify-center md:mb-4">
           <FilterButton label="All" filterKey="all" icon={<FaFilter />} />
           <FilterButton label="General" filterKey="general" />
