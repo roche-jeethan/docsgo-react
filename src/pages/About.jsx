@@ -3,9 +3,9 @@ import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
 
 function About() {
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState();
     const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
+        setDarkMode(!darkMode);
 };
     return(
         <div className={darkMode ? 'dark' : ''}>

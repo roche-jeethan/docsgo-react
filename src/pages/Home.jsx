@@ -8,7 +8,7 @@ import { FaFilter } from "react-icons/fa";
 
 function Home() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState();
   const [activeFilter, setActiveFilter] = useState("all");
 
   const toggleDarkMode = () => {
@@ -53,28 +53,24 @@ function Home() {
       case "general":
         return (
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">General Purpose Languages</h2>
             <LanguageList languages={filteredGeneral} />
           </section>
         );
       case "web":
         return (
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">Web Development Languages</h2>
             <LanguageList languages={filteredWeb} />
           </section>
         );
       case "mobile":
         return (
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">Mobile Development Languages</h2>
             <LanguageList languages={filteredMobile} />
           </section>
         );
       case "mlds":
         return (
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">Machine Learning & Data Science Languages</h2>
             <LanguageList languages={filteredMLDS} />
           </section>
         );
@@ -87,15 +83,15 @@ function Home() {
     const isActive = activeFilter === filterKey;
     return (
       <button
-        onClick={() => setActiveFilter(filterKey)}
-        className={`mb-1 mr-1 md:mb-1.5 md:mr-1.5 rounded-lg px-3 py-1 flex items-center transition-colors 
-          ${isActive 
-            ? "bg-blue-600 text-white border border-blue-600 shadow-sm" 
-            : "bg-white text-gray-800 border border-gray-300 hover:bg-gray-100"} 
-          focus:outline-none`}
+      onClick={() => setActiveFilter(filterKey)}
+      className={`mb-1 mr-1 md:mb-1.5 md:mr-1.5 rounded-lg px-3 py-1 flex items-center transition-colors focus:outline-none ${
+        isActive
+        ? "bg-blue-600 text-white border border-blue-600 shadow-sm dark:bg-blue-500 dark:border-blue-500"
+        : "bg-white text-gray-800 border border-gray-300 hover:bg-gray-100 dark:bg-gray-800 dark:text-gray-200 dark:border-gray-600 dark:hover:bg-gray-700"
+      }`}
       >
-        {icon && <span className="mr-1">{icon}</span>}
-        <span>{label}</span>
+      {icon && <span className="mr-1">{icon}</span>}
+      <span>{label}</span>
       </button>
     );
   };
