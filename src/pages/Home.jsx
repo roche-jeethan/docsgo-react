@@ -8,7 +8,7 @@ import { FaFilter } from "react-icons/fa";
 
 function Home() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState();
   const [activeFilter, setActiveFilter] = useState("all");
 
   const toggleDarkMode = () => {
