@@ -1,20 +1,13 @@
 import React, { useState } from "react";
 import LanguageList from "../components/LanguageList";
 import SearchBar from "../components/SearchBar";
-// import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import { general, web, mobile, mlds } from "../languages";
 import { FaFilter } from "react-icons/fa";
 
 function Home() {
   const [searchQuery, setSearchQuery] = useState("");
-  //const [darkMode, setDarkMode] = useState();
   const [activeFilter, setActiveFilter] = useState("all");
-
-  // const toggleDarkMode = () => {
-  //   setDarkMode(!darkMode);
-  // };
-
   const filterLanguages = (languages) =>
     languages.filter((language) =>
       language.name.toLowerCase().includes(searchQuery.toLowerCase())
