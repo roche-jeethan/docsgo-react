@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import LanguageList from "../components/LanguageList";
 import SearchBar from "../components/SearchBar";
-import NavBar from "../components/NavBar";
+// import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import { general, web, mobile, mlds } from "../languages";
 import { FaFilter } from "react-icons/fa";
 
 function Home() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [darkMode, setDarkMode] = useState();
+  //const [darkMode, setDarkMode] = useState();
   const [activeFilter, setActiveFilter] = useState("all");
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
+  // const toggleDarkMode = () => {
+  //   setDarkMode(!darkMode);
+  // };
 
   const filterLanguages = (languages) =>
     languages.filter((language) =>
@@ -97,9 +97,7 @@ function Home() {
   };
 
   return (
-    <div className={darkMode ? "dark" : ""}>
-      <div className={`min-h-screen bg-cover ${darkMode ? "bg-dark-theme" : "bg-light-theme"} text-black dark:text-white`}>
-        <NavBar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <div>
         <div className="py-10">
           <h1 className="text-6xl font-bold text-center">Welcome to DocsGo</h1>
           <p className="text-xl italic text-center mt-4">
@@ -126,7 +124,6 @@ function Home() {
         </main>
         <Footer />
       </div>
-    </div>
   );
 }
 
