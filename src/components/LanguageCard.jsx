@@ -6,10 +6,13 @@ const LanguageCard = ({ name, description, url, icon }) => {
   };
 
   return (
-    <div className="language-card p-4 border rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" onClick={handleClick}>
+    <div
+      className="language-card p-4 border border-gray-600 dark:border-gray-400 rounded-lg shadow-md dark:shadow-md hover:shadow-lg dark:hover:shadow-lg transition-shadow duration-300"
+      onClick={handleClick}
+    >
       <div className="language-icon mb-2 text-3xl">{icon}</div>
       <h2 className="text-xl font-semibold mb-1">{name}</h2>
-      <p className="text-600">{description}</p>
+      <p className="text-600 dark:text-gray-300">{description}</p>
     </div>
   );
 };
