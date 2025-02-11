@@ -22,22 +22,30 @@ function Home() {
     if (activeFilter === "all") {
       return (
         <>
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">General Purpose Languages</h2>
-            <LanguageList languages={filteredGeneral} />
-          </section>
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">Web Development Languages</h2>
-            <LanguageList languages={filteredWeb} />
-          </section>
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">Mobile Development Languages</h2>
-            <LanguageList languages={filteredMobile} />
-          </section>
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">Machine Learning & Data Science Languages</h2>
-            <LanguageList languages={filteredMLDS} />
-          </section>
+          {filteredGeneral.length > 0 && (
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4">General Purpose Languages</h2>
+              <LanguageList languages={filteredGeneral} />
+            </section>
+          )}
+          {filteredWeb.length > 0 && (
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4">Web Development Languages</h2>
+              <LanguageList languages={filteredWeb} />
+            </section>
+          )}
+          {filteredMobile.length > 0 && (
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4">Mobile Development Languages</h2>
+              <LanguageList languages={filteredMobile} />
+            </section>
+          )}
+          {filteredMLDS.length > 0 && (
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4">Machine Learning & Data Science Languages</h2>
+              <LanguageList languages={filteredMLDS} />
+            </section>
+          )}
         </>
       );
     }
