@@ -41,7 +41,7 @@ This project is built with cutting-edge web technologies:
 
 ## 🌍 Website Link
 
-Link: [HERE](https://docsgo.vercel.app/)
+Link: [HERE](https://docsgo-react.vercel.app/)
 
 
 ## 📖 Conclusion
